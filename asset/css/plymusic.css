@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --pink: #ff9eaa;
+  --dark-gray: #818a9a;
+  --light-gray: #eff2f7;
+  --shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+  --inset-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+body {
+  background: var(--light-gray);
+  background: linear-gradient(to bottom right , #fff, var(--pink));
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 500px;
+  width: 500px;
+  background-color: var(--light-gray);
+  margin: 20px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.img-box {
+  padding: 15px;
+  flex: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+}
+.progress {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  padding: 0 30px;
+  background-color: var(--light-gray);
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+  margin: 20px 0;
+}
+.progress-line {
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--dark-gray);
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+}
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.btn {
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: var(--light-gray);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: scale 2s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+.btn:active {
+  box-shadow: var(--inset-shadow);
+  
+}
+.play-btn {
+  width: 80px;
+  height: 80px;
+  font-size: 2.5rem;
+}
+.img-box img {
+  /* filter: grayscale(100%); */
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  
+  box-shadow: var(--inset-shadow);
+  object-fit:cover;
+  /* animation: calc 10s linear infinite; */
+}
+.ani-img{
+  animation: calc 10s linear infinite;
+}
+
+@keyframes calc {
+  0% {
+    transform: rotate(360deg);
+  }
+}
