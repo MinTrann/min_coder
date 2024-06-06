@@ -4,7 +4,7 @@ const btnOff = document.querySelector('.btnoff')
 const playBtn = document.querySelector('.play-btn')
 const playIcon = document.querySelector('.play-icon')
 const progressLine = document.querySelector('.progress-line')
-const audio = new Audio('./asset/music/hattie-cover-lyrics-vietsub.mp3')
+const audio = new Audio('./asset/music/X2Download.app - Westlife -  Beautiful in white (Lyrics) (320 kbps).mp3')
 playBtn.onclick = function(){
     const isPlaying = !audio.paused
     playIcon.name = isPlaying ? 'play': 'pause'
@@ -32,7 +32,7 @@ function progressBar(){
     progressLine.style.width =(currentTime /ducation) * 100 + '%'
 }
 //
-console.log(alert(""));
+console.log(alert("Khả Khả 🙃🙃"));
 
 
    
