@@ -4,7 +4,7 @@ const btnOff = document.querySelector('.btnoff')
 const playBtn = document.querySelector('.play-btn')
 const playIcon = document.querySelector('.play-icon')
 const progressLine = document.querySelector('.progress-line')
-const audio = new Audio('./asset/music/mong-rang-em-luon-manh-me-vuot-qua-duoc-bao-thang-tram-huy-vac-lyrics-video.mp3')
+const audio = new Audio('./asset/music/hattie-cover-lyrics-vietsub.mp3')
 playBtn.onclick = function(){
     const isPlaying = !audio.paused
     playIcon.name = isPlaying ? 'play': 'pause'
@@ -32,7 +32,7 @@ function progressBar(){
     progressLine.style.width =(currentTime /ducation) * 100 + '%'
 }
 //
-console.log(alert("Khả Khả <3 "));
+console.log(alert(""));
 
 
    
