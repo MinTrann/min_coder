@@ -31,9 +31,3 @@ function progressBar(){
     }
     progressLine.style.width =(currentTime /ducation) * 100 + '%'
 }
-//
-console.log(alert("Khả Khả 🙃🙃🙂"));
-
-
-   
-  
