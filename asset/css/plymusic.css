@@ -99,7 +99,7 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  
+
   box-shadow: var(--inset-shadow);
   object-fit:cover;
   /* animation: calc 10s linear infinite; */
